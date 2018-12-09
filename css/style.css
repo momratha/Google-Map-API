@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.main {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+}
+#map {
+    height: 100%;
+    width: 100%;
+    align-items: flex-start;
+}
+#list {
+    height: 0px;
+    width: 100%;
+    overflow-y: scroll;
+    
+}
+.setListHeight {
+    height: 400px !important;
+}
+#btn_list {
+    display: block;
+    position:absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+}
+@media only screen and (min-device-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+    }
+    #map {
+        height: 100%;
+        width: 70%;
+        z-index: 1;
+    }
+    #list {
+    height: 100%;
+    width: 30%;
+    overflow-y: scroll;
+    display: block;
+    
+    }
+    #btn_list {
+        display: none;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 0;
+    }
+}
