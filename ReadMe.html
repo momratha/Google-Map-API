@@ -1,0 +1,129 @@
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+</head>
+
+<body>
+  <p>
+
+
+    <style type="text/css">
+      body {
+        font-family: Myriad, Helvetica, sans-serif;
+        font-size: 16px;
+        max-width: 600px;
+        margin: 2em auto;
+        color: #222;
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: #468;
+      }
+
+      h2 {
+        margin: 1em 0 -0.25em 0;
+        font-weight: normal;
+      }
+
+      li {
+        margin-top: 0.25em;
+      }
+
+      p,
+      li {
+        line-height: 1.5em;
+      }
+
+      a,
+      a:visited {
+        color: #C40;
+      }
+
+      code,
+      pre {
+        font-family: Monaco, Courier, fixed;
+        color: #B44;
+      }
+
+      pre {
+        background: #F0F0F0;
+        padding: 1em;
+      }
+
+      .note {
+        padding: 1em;
+        background: #eee;
+        border-radius: 5px;
+      }
+    </style>
+
+
+  </p>
+  <h1>Traffic Map</h1>
+
+  <p class="lead">A local traffic authority needs a solution to display
+    traffic incidents on a map. A simple browser based interface is
+    required to display incident locations and information each about each
+    incident.</p>
+
+  <h2>JSON Feed</h2>
+
+  <p>The traffic incidents are published in a JSON feed which contains
+    data about the incident type, description, location details etc. This
+    is live data and usually contains 300-400 items. You can assume this is
+    the maximum number of items your solution needs to support.</p>
+
+  <p><a href="https://victraffic-api.wd.com.au/api/v3/incidents">https://victraffic-api.wd.com.au/api/v3/incidents</a>
+  </p>
+
+  <h2>Requirements</h2>
+
+  <p>Build a small single page JS application that has the following features:</p>
+
+  <ol>
+    <li>Displays the incidents on an interactive map. Each incident in
+      the feed should be displayed on the map with a marker. The user must be
+      able to pan and zoom the map to explore incidents in a particular area.
+      You can choose which map library to use.</li>
+    <li>When a user clicks an incident marker some basic information is
+      shown. The following incident details are required to be displayed:
+      alert_type, title, description. This information should be presented in
+      a pop-up element that can be dismissed by the user.</li>
+    <li>Displays incidents in a list. As the user pans and zooms the map
+      interface the incident list needs to be updated to show only the
+      incidents currently visible on the map. Each list element needs to
+      display the alert_type and title of the incident.</li>
+  </ol>
+
+  <h2>UI Requirements</h2>
+
+  <p>The application needs to implement a responsive layout to support both desktop and mobile devices.</p>
+
+  <ol>
+    <li>When in desktop mode the list and map should be both on-screen</li>
+    <li>When in mobile mode the map should be on-screen and the list is accessible by a button or similar element.</li>
+    <li>When in mobile mode the button to access the list should display the number of list elements in the button label
+    </li>
+  </ol>
+
+  <img src="images/layout.png">
+
+  <h2>Expectations</h2>
+
+  <ul>
+    <li>We require the application code and any build instructions.</li>
+    <li>There are no time limits on the test, but please indicate approximately how
+      long you spent on it.</li>
+    <li>You are not expected to apply any specific styling but please apply some basic CSS
+      to ensure the interface elements are pleasantly presented.</li>
+    <li>You may use any frontend framework &amp; build tool or just plain JS.</li>
+  </ul>
+
+
+
+</body>
+
+</html>

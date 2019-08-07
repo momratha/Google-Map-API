@@ -8,11 +8,11 @@ var initConfig = {
         lng: 143.9837606,
         lat: -37.8392243
     },
-    
+
     listID: "marker_list",
     btnID: "btn_list",
     DataID: "data",
     divList: "list",
     jsonURL: "api/index.php",
-   
+
 }
